@@ -1,26 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+
+let anyFunction = (a: boolean) => console.log('a') //  любая функци
+
+let anyObject = [1, 2, 3, 'string', {age:12, name: "Alex" }] // любой объект
+
+let function1 = (anyObject: (number | string | { name: string; age: number })[], anyFunction: (a: boolean) => void) => {
+
+}
+
+function1(anyObject, anyFunction)          // поэтому, сразу вызываем функцию с нужными данными
+                                           // при курсоре на аргументах функции нажимаем Alt+Enter
+                                           // выбираем "Change function1() signature"
+                                           // и у нас готовая типизация
+
+
+
+
+
+
+
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+
+    return (<div className="App">x</div>
+    );
 }
 
 export default App;

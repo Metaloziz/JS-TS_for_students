@@ -7,26 +7,27 @@ let c: number
 
 beforeEach(() => {
     a = 1
-    b = 2
+    b = 21
     c = 3
 })
 
-test.skip('summ should be correct', () => {
+test('sum should be correct', () => {
     // Function
     let result: number;
-    result = summ(a, b);
+     result = summ(a, b);
     // Expect result
-    expect(result).toBe(3)
+    expect(result).toBe(22)
+    expect(b).toBe(21)
 })
 
-test.skip('multy should be correct', () => {
+test('multi should be correct', () => {
     // Function
     const result = multy(b, c)
     // Expect result
-    expect(result).toBe(6)
+    expect(result).toBe(63)
 })
 
-test.skip('return word', () => {
+test('return word', () => {
 
     const result_1 = words('Hello word')
     const result_2 = words('Goood work')

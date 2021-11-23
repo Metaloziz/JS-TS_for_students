@@ -11,3 +11,4 @@ export function multy (a:number, b:number) {
 export function words (sentence:string) {
     return sentence.split(" ")
 }
+

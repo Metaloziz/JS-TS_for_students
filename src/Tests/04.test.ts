@@ -7,5 +7,4 @@ test.skip ('max number of array', ()=>{
 
     expect(c.length).toBe(3)
     expect(c[0]).toBe(4)
-    expect(a).toBeDefined()
 })
