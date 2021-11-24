@@ -1,10 +1,16 @@
 export {}
 
-test.skip ('max number of array', ()=>{
-    const a = [1,2,3,4,5,6]
 
-    const c = a.filter(b => b > 3 )
+test('choice courses', () => {
 
-    expect(c.length).toBe(3)
-    expect(c[0]).toBe(4)
+    let courses = [
+        {title: 'css', price: 220},
+        {title: 'js', price: 300},
+        {title: 'ts', price: 110},
+    ]
+
+    const answer = courses.filter(x => x.price !== 220)
+
+    expect(answer.length).toBe(2)
+    expect(answer[0].price).toBe(300)
 })

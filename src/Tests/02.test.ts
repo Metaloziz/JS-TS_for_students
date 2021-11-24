@@ -1,6 +1,6 @@
 export {}
 
-test.skip ('max number of array', ()=>{
+test('max number of array', ()=>{
     const a = [1,2,3,4,5,6]
 
     const c = a.filter(b => b > 3 )
