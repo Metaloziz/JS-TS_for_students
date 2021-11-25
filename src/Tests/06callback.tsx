@@ -1,4 +1,4 @@
-import React from "react";
+import React, {MouseEvent} from "react";
 
 export {}
 
@@ -29,11 +29,12 @@ export let users = [
 export let User = () => {
 
     let message = () => {
-        console.log('user has been deleted')
+        console.log('Hello')
     }
 
-    const funct = () => {
-        console.log("click")
+    const funct = (event: MouseEvent<HTMLButtonElement>) => {
+        debugger
+        console.log(event.nativeEvent)
     }
 
 
